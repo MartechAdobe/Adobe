@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>Amazon Innovation Program: AEP on AWS</title>
+<style type="text/css">
+#outlook a {
+    padding: 0;
+}
+.ReadMsgBody {
+    width: 100%;
+}
+.ExternalClass {
+    width: 100%;
+}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%;
+}
+body, table, td, a {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+table, td {
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+img {
+    -ms-interpolation-mode: bicubic;
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin: 0px 0px !important;
+}
+table {
+    border-collapse: collapse !important;
+}
+body {
+    height: 100% !important;
+    margin: 0!important;
+    padding: 0;
+    width: 100% !important;
+}
+span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+}
+span.MsoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+}
+
+@media only screen and (max-width:640px) {
+.img-max {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+}
+.full-width {
+    width: 100% !important;
+    display: block!important;
+}
+.mobile-spacer {
+    width: 25px !important;
+}
+.font27 {
+    font-size: 27px!important;
+    line-height: 30px!important;
+}
+.content-width {
+    width: 100%!important;
+    display: block!important;
+}
+[x-apple-data-detectors-type="calendar-event"] {
+    color: #808080 !important;
+    -webkit-text-decoration-color: #808080 !important;
+    text-decoration: none !important;
+}
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+.none {
+    display: none!important;
+}
+.h18 {
+    height: 18px!important;
+}
+}
+</style>
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+</head>
+<body style="margin:0; padding:0;-webkit-font-smoothing:antialiased;width:100% !important;-webkit-text-size-adjust:none;" topmargin="0">
+<div style="font-size:0px; color:#333333; display:none; overflow:hidden; visibility:hidden;">Amazon &amp; Adobe Innovation Program</div>
+<table width="100%" bgcolor="#d6d6d6" style="background-color:#d6d6d6;" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top"><table width="850" align="center" class="full-width" border="0" style="width: 850px; background: #ffffff;" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><table width="850" align="center" class="full-width" border="0" style="width: 850px; background: #f5f5f5;" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mobile-spacer" width="50" style="width:50px; background: #f5f5f5;">&nbsp;</td>
+                <td valign="top" style="background: #f5f5f5;"><table width="100%" border="0" cellspacing="0" cellpadding="0"  class="full-width">
+                    <tbody>
+                      <tr>
+                        <td height="30" style="height: 30px;">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td><img src="https://landing.adobe.com/dam/uploads/2025-DX/NA/Adobe-Amazon-logo-04-29-2024.png" alt="Adobe X Amazon" width="225" style="width: 225px; display: block;"></td>
+                      </tr>
+                      <tr>
+                        <td height="30" style="height: 30px;" class="h18">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="font27" style="color:#000000; font-family:'Adobe Clean Black', Arial, Helvetica, sans-serif; font-size:38px; line-height:35px; text-align:left; font-weight:normal; padding-bottom:6px;" >Amazon + Adobe <br>
+                          Innovation Program</td>
+                      </tr>
+                      <tr>
+                        <td height="20" style="height: 20px;">&nbsp;</td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td class="mobile-spacer" width="350" style="background: #f5f5f5;"><img src="https://landing.adobe.com/dam/uploads/2025-DX/NA/AmazonBanner-04-29-2025.png" alt="Banner" width="350" style="width: 350px; display: block;" class="none"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td><table width="850" align="center" class="full-width" border="0" style="width: 850px; background: #ffffff;" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mobile-spacer" width="50" style="width:50px;">&nbsp;</td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0"  class="full-width">
+                    <tr>
+                      <td height="20">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="0" cellpadding="0" style="border:1px solid #747474;" class="full-width">
+                          <tbody>
+                            <tr>
+                              <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:13px; line-height:16px;text-align:center; color: #000000;  font-weight: bold; background: #f5f5f5; border-right:1px solid #747474; border-bottom:1px solid #747474; padding-top: 7px; padding-bottom: 7px;" class="content-width">Initiative</td>
+                              <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:13px; line-height:16px;text-align:center; color: #000000;  font-weight: bold; background: #f5f5f5; border-right:1px solid #747474; border-bottom:1px solid #747474; padding-top: 7px; padding-bottom: 7px;" class="content-width">Amazon Executieve Sponsor</td>
+                              <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:13px; line-height:16px;text-align:center; color: #000000;  font-weight: bold; background: #f5f5f5;border-right:1px solid #747474; border-bottom:1px solid #747474; padding-top: 7px; padding-bottom: 7px;" class="content-width">Amazon Problem Statement</td>
+                              <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:13px; line-height:16px;text-align:center; color: #000000;  font-weight: bold; background: #f5f5f5; border-bottom:1px solid #747474; padding-top: 7px; padding-bottom: 7px;" class="content-width">Initiative Objective</td>
+                            </tr>
+                            <tr>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>Amazon Ads</strong> and Adobe to enhance audience and creative optimization for advertisers</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Paul Kotas, SVP, Amazon Ads</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Many advertisers are unable to efficiently create and scale high-quality, personalized ad campaigns, holding them back from investing further with Amazon Ads. Their challenges primarily relate to content creation, audience targeting, and performance attribution.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; " class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Amazon Ads and Adobe are exploring integrating <strong>GenStudio PeM</strong>, <strong>Real-time CDP Collaboration</strong>, and <strong>Firefly Services</strong> with Amazon Ads' platforms to improve creative personalization, audience targeting, reporting and insights, and campaign optimization across multiple channels.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>Amazon Ads</strong> and Adobe to enhance media optimization for advertisers</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Paul Kotas, SVP, Amazon Ads</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Advertisers are facing significant challenges in effectively utilizing their first-party onsite data while integrating their external data sources to optimizate media, audience taregeting, and creatie content. The lack of a seemless eperiences in activating and leveraging these data sets results in inefficiencies and suboptimal campaign performance.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; " class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Amazon Ads and and Adobe are partnering to innovate the future of customer acquisition paid media technology to build a central operating system that integrates advertisers first-party onsite through <strong>Adobe Analytics</strong> with Amazon's proprietary second-party data with a tightly integrated Adobe Dynamic Creative Optimization to effectively optimize media, audiences, and creative.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>Selling Partner Services</strong> and Adobe to enable enterprise solutions for Amazon sellers</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Mary Beth Westmoreland, VP, WW Selling Parnter Experience</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Sellers need to create high quality content faster and with insight into how the content is performing so they can "fail fast" and iterate. </td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; " class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Selling Partner Services and Adobe are exploring integrating <strong>Adobe Express</strong> in "crawl" phase to enable high-quality listings and A+ Content for sellers. Parties will also explore <strong>Adobe GenStudio and Analytics</strong> for seller journey optimization to reach customers at the right time with the right content.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>AWS</strong> and Adobe to enable web content management and digital asset management to Amazon sellers and advertisers</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Matt Garman, CEO, AWS</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Adobe Experience Manager Cloud Service (AEM CS) is currently only on Azure. AWS would like AEM CS to be multicloud on AWS for usage within Amazon and enabled for our joint customers.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; " class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">AWS and Adobe are exploring <strong>AEM CS</strong> on AWS to enable Selling Partner Services and Amazon Ads customer to leverage <strong>GenStudio and GenStudio PeM</strong>. This initiative is tied to #1 and #3 above. as AWS does not want customers to leverage a hybrid solution that runs on AWS and Azure. </td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>Kindle Direct Publishing (KDP)</strong> and Adobe to collaborate to modernize cover design and marketing content creation for self-published authors</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Panos Panay, SVP, Devices &amp; Services</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">KDP Authors struggle with creating book covers and translating them in various formats. Authors must create digital versions but also need to send to print which is a current challenge. Once the cover content is created those assets need to be leveragable for marketing and promotional content.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; " class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">KDP and Adobe are discussing leveraging <strong>Firefly Services and Adobe Express</strong> to automate cover creation, adaptation for various formats and assist in generating. In the run stage, KDP Authors can leverage <strong>GenStudio PeM</strong> and activating marketing content seemlessly and at scale.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>AWS</strong> and Adobe collaborate to enhance creative content generation through Amazon Bedrock</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Scott Rosecrans, VP AI Business Development</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Customers need to build and scale GenAI applications in a unified platform in a private, secure manner.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; " class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">AWS and Adobe are collaborating to integrate Adobe's Creative Cloud (<strong>Firefly Services</strong>, <strong>Photoshop</strong>) to automation content creation at scale through Amazon Bedrock for mutually approved use cases. We will focus on pilot programs, like initiative #5 and the top four Firefly Services Use Cases (Banners at Scale, Video)</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>Amazon Ships in Product Packaging (SIPP)</strong> and Adobe to streamline and enhance packaging design for direct-to-consumer brands</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Doug Herrington, CEO, WW Amaozn Stores</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Amazon SIPP program must redesign 100M packages over the 2 year and reduce the current cost ($50-200k) and time (18 months) that it takes to redesigning packaging.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; " class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>Amazon Ads</strong> and Adobe are exploring creating an end-to-end automated packaging solution that integrates <strong>Adobe Substance</strong>, <strong>Fantastic Fold</strong>, and <strong>Firefly Serivces</strong> with Amazon SIPP program, helping brands maintain creative control while meeting SIPP certification requirements and reducing packaging waste. </td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>Kindle Scribe</strong> and Adobe to expand productivity use case for Amaozn customers</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Panos Panay, SVP, Devices &amp; Services</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Kindle Scribe and Adobe are in discussion to enable: 1/ send/receive/open Adobe PDFs on Scribe, 2/ write in PDFs for notes using Scribe stylus, 3/ sign contracts with <strong>Adobe Sign</strong></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; " class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>Kindle Scribe</strong> and Adobe are in discussion to enable: 1/ send/receive/open Adobe PDFs on Scribe, 2/ write in PDFs for notes using Scribe stylus, 3/ sign contracts with Adobe Sign. The opportunity is goes beyond Kindle Scribe to several of their devices.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>Amazon Business Prime</strong> and Adobe to expand distribution of Adobe's AI-powered document and creative tools through Amazon's Business Prime membership</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">TBD</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Amazon Business would like to "build a moat" around their business customer to enable additional value for their customers.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style=" border-bottom:1px solid #747474; " class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>Business Prime</strong> and Adobe are engaging iin discussions to integrate Adobe Acrobat and Express  Business Prime offering to enhance value for business customers while expanding Adobe's user base.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style="border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;"><strong>Buy with Prime &amp; Multichannel Fulfillment (MCF)</strong> collaborate to enhance ecommerce capabillities for customers</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style="border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">TBD</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td style="border-right:1px solid #747474;" class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Adobe and Amazon have several customers in common. Enabling an Adobe Commerce integration will enable a more steamlined transaction for our joint customers.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td class="content-width"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                  <tbody>
+                                    <tr>
+                                      <td style="font-family: 'Adobe Clean', Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;text-align:center; color: #000000;padding-top:7px; padding-bottom:7px;">Buy with Prime and Multi-Channel Fulfillment would like to enable an <strong>Adobe Commerce</strong> integrations to their customers to improve their ability to transact with and rewach mid-market, large, and enterprise sellers.</td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td height="30">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                <td class="mobile-spacer" width="50" style="width:50px;">&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td><table width="850" style="background:#f4f4f4; width: 850px;" align="center" class="full-width" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="mobile-spacer" width="50" style="width:50px;">&nbsp;</td>
+          <td><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="40" style="height: 40px;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                    <td width="80" align="left" valign="middle"><img src="https://landing.adobe.com/dam/uploads/2023-APS/EMEA/adobe_mascot_135.35_09.14.png" width="80" alt="Adobe" title="Adobe" style="width: 80px; display: block;"></td>
+                      <td>&nbsp;</td>
+                      <td width="10"><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsource.adobe.com%2Fdc%2Fuq3EykqQY7h0Yyhe2BWhME-Lz9jbrK3pMQ4eeAhR0MXoRBiPxrXVbOC3faCu73rJ%2FMzYwLUtDSS04MDQAAAGYdIWG6ifgFO-AJHKKz601vm-6sqrua5pS5FdKNzT2B_64bVrP71rx8r9De3nVZ33wT8vefcs%3D&data=05%7C02%7Cgarsingh%40adobe.com%7Cad8708d53e094ca48baa08dd45cbc682%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638743463701880911%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=32JL67cliWDlGj%2BGl33RulcPofXzw5Kd%2BBOmAbACDdQ%3D&reserved=0" _label="Facebook" target="_blank"><img  alt="Facebook" title="Facebook" src="https://landing.adobe.com/dam/uploads/2023-APS/NA/facebook-icon--01-16-2023.png" width="9" style="display:block; outline: none; border: 0px;"></a></td>
+                      <td width="30">&nbsp;</td>
+                      <td width="18"><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsource.adobe.com%2Fdc%2FWhZcq50CsoLLiaLsfDq43lTzK72eThVM9g4LprlcAVs%3D%2FMzYwLUtDSS04MDQAAAGYdIWG6ifgFO-AJHKKz601vm-6sqrua5pS5FdKNzT2B_64bVrP71rx8r9De3nVZ33wT8vefcs%3D&data=05%7C02%7Cgarsingh%40adobe.com%7Cad8708d53e094ca48baa08dd45cbc682%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638743463701910412%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=r4b1IjUhQgPY1pSDj4J0jOQlndOml%2B2jW2tWbmenwgY%3D&reserved=0" _label="Instagram" target="_blank"><img alt="Instagram" title="Instagram" src="https://landing.adobe.com/dam/uploads/2023-APS/NA/Instagram-icon--01-16-2023.png" width="18" style="display:block; border: 0px;"></a></td>
+                      <td width="30">&nbsp;</td>
+                      <td width="18" ><a href="https://www.linkedin.com/showcase/adobe-experience-cloud/" _label="Linkedin" target="_blank"><img  alt="Linkedin" title="Linkedin" src="https://landing.adobe.com/dam/uploads/2023-APS/NA/LinkedIn-icon--01-16-2023.png" width="18" style="display:block; border: 0px;"></a></td>
+                      <td width="30">&nbsp;</td>
+                      <td width="25"><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsource.adobe.com%2Fdc%2FM9Y3nowLDCcEv8uSbJAkacZ7TtH11BMytLzGkxfyIBu-3uFYmdP6Eruem8qJx1YV%2FMzYwLUtDSS04MDQAAAGYdIWG6ifgFO-AJHKKz601vm-6sqrua5pS5FdKNzT2B_64bVrP71rx8r9De3nVZ33wT8vefcs%3D&data=05%7C02%7Cgarsingh%40adobe.com%7Cad8708d53e094ca48baa08dd45cbc682%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638743463701919936%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2B3TP2Cbe73GvVhcs80uIorApVMRyfjve%2BczzI23qtyI%3D&reserved=0" _label="YouTube" target="_blank"><img alt="YouTube" title="YouTube" src="https://landing.adobe.com/dam/uploads/2023-APS/NA/YouTube-icon--01-16-2023.png" width="30" style="display:block; border:0px;"></a></td>
+                      <td width="30">&nbsp;</td>
+                      <td width="20"><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsource.adobe.com%2Fdc%2FNlF0EOZyKMHwqoJg0ITwx4KeMS5g7xS2p4E_IkfFtNk%3D%2FMzYwLUtDSS04MDQAAAGYdIWG6ifgFO-AJHKKz601vm-6sqrua5pS5FdKNzT2B_64bVrP71rx8r9De3nVZ33wT8vefcs%3D&data=05%7C02%7Cgarsingh%40adobe.com%7Cad8708d53e094ca48baa08dd45cbc682%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638743463701900707%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=pybyh297mvH3MrsqX2901551bKkHertyZnicZTZvgCg%3D&reserved=0" _label="Twitter" target="_blank"><img alt="Twitter" title="Twitter" src="https://engage.adobe.com/rs/360-KCI-804/images/twitter-959595.png" width="20" border="0" hspace="0" vspace="0" style="display:block; border: 0px; width:20px;"></a></td>
+                      <td width="30">&nbsp;</td>
+                      <td width="18"><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsource.adobe.com%2Fdc%2FgQt2MpNKAdVW9Y-gN5evpBtBqJiLenFHuHIuHrmqXpg%3D%2FMzYwLUtDSS04MDQAAAGYdIWG6ifgFO-AJHKKz601vm-6sqrua5pS5FdKNzT2B_64bVrP71rx8r9De3nVZ33wT8vefcs%3D&data=05%7C02%7Cgarsingh%40adobe.com%7Cad8708d53e094ca48baa08dd45cbc682%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638743463701929601%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=uckvfSkgEenADavKyJosjainqWLJHwyJA%2FeULkFdGY0%3D&reserved=0" _label="TikTok" target="_blank"><img alt="TikTok" title="TikTok" src="https://landing.adobe.com/dam/uploads/2025-APS/NA/Tiktok_Social_Media_Icon.png" width="18" style="display:block; border: 0px; width: 18px;"></a></td>
+                  </table></td>
+              </tr>
+              <tr>
+                <td height="40">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="font-family:Arial, Helvetica, sans-serif; line-height:18px; font-size: 12px; color: #959595; text-align: left;"> Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe in the United States and/or other countries. This is not a comprehensive list of all Adobe trademarks. For a full list, refer to the <a href="https://www.adobe.com/content/dam/cc/en/legal/licenses-terms/pdf/adobe_trademark_database_external.pdf?mkt_tok=MzYwLUtDSS04MDQAAAGYUAlXUPiiXG9KkHxJSTRu1MarITNSJYWZ9Fb9F1H_HrgJTNPNXS0Q4KSSsRc4GTAfHSvDHM8lcvuFnjFgvph5" title="Adobe List of Trademarks" style="TEXT-DECORATION: underline; COLOR: #9C9C9C;">Adobe List of Trademarks</a>. All other trademarks are the property of their respective owners.<br>
+                  <br>
+                  This is a marketing email from Adobe, 345 Park Avenue, San Jose, CA 95110 USA. Click here to <a title="Unsubscribe" style="TEXT-DECORATION: underline; COLOR: #9C9C9C;" href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsource.adobe.com%2Fdc%2F5GLKhlgas6-Nh3Wmas5tZdA4-WUz6vBWO9JBBqTWBZrQFMYLiOapY2Nd3LuAOpK5bTA9B3zq-Atg3Ua5Au4rFWDpBtPndrAnG-vclXUeEIXaQd3H7ODW3WYZ6Yl-BLD0Ks4cdx43JuBW_5uVaxQ0TLprw1IvCQp4XOH4V54QSt3S4-qWHMEpx0gZeSvTY8UQS2nvCGMQrx3_Gi9Uc1Wpn6f8APv7DUdLNm0q5pcs5SKcW1-tcQUo74G9oDvf5QGrmAoEW8k5NOnGw3NNhFUjLtn65l0t8Wo3l2UcGUXwiCtIKCL__XYI3t1c8JbNIpgbpNM3uPEZ4imnIg4-eVhedrcOqxM5BOeS7MomEk5e_UBb2iytAUhVZQt0RyYf9D1agSwlm44rohLADf6DwXMirzOcMUa04md7hk0dFrTYvPUPbVDQ9qvBFiweXr6PbTF3NTvrkjsHY5sKdwYLMmDNrbEK0Vyo6jJGnJ-L-kPu4bY3ZrqmGP-i-NRzYJcA6Gp6GNC9AYnWsYX0rioXx-jUgDEyzx8FOtP1CmjciPxdHQIsRuOps6LAMl98BFux7DSD%2FMzYwLUtDSS04MDQAAAGVLDOgRzmKhUv86DyIG5ggXiglIYEeG3QUeyG2msgi92TbXstRW-r_OGoQiPKA37SCfzkWSBg%3D&data=05%7C02%7Cabhinavsaini%40adobe.com%7C130477a8813d4edc288608dcc592c628%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638602481387587722%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=66RHxOgrkV2NovhROtDuawv0EdhjyXQqttm2%2FasWyjM%3D&reserved=0" target="_blank" _label="Unsubscribe">unsubscribe</a>. Please review the <a title="Adobe Privacy Policy" style="TEXT-DECORATION: underline; COLOR: #9C9C9C;" href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsource.adobe.com%2FMzYwLUtDSS04MDQAAAGVLDOgRlsorm54rXfvCmjG5IdpS3YhZqCdnQKfkO2GaS4zXqdbfwZz7CoUnE8rNrfWxXx6uP8%3D&data=05%7C02%7Cabhinavsaini%40adobe.com%7C130477a8813d4edc288608dcc592c628%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638602481387594103%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=zylY7NnN%2F18BeKvVcznD5kFoBiC1Id5W%2BpVdMIrp2pg%3D&reserved=0" target="_blank" _label="Adobe Privacy Policy">Adobe Privacy Policy</a>.<br>
+                  <br>
+                  To ensure email delivery, add <a href="mailto:infoacs@info.adobe.com" style="COLOR: #9C9C9C;" _label="Email">infoacs@info.adobe.com</a> to your address book, contacts, or safe sender list.<br>
+                  <br>
+                  <a href="javscript:void(0);" _label="Mirror Page" _type="mirrorPage" alias="View Browser" style="COLOR: #9C9C9C; text-decoration:underline;">View in Browser</a></td>
+              </tr>
+              <tr>
+                <td height="40" style="height: 40px;">&nbsp;</td>
+              </tr>
+            </table></td>
+          <td class="mobile-spacer" width="50" style="width:50px;">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
