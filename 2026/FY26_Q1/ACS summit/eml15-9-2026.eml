@@ -1,0 +1,725 @@
+Received: from SJ0PR02MB8561.namprd02.prod.outlook.com (2603:10b6:a03:3f0::20)
+ by SA3PR02MB9278.namprd02.prod.outlook.com with HTTPS; Sun, 13 Sep 2026
+ 09:00:44 +0000
+Received: from BN0PR04CA0147.namprd04.prod.outlook.com (2603:10b6:408:ed::32)
+ by SJ0PR02MB8561.namprd02.prod.outlook.com (2603:10b6:a03:3f0::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.406.9; Sun, 13 Sep
+ 2026 09:00:14 +0000
+Received: from BL02EPF00029927.namprd02.prod.outlook.com
+ (2603:10b6:408:ed:cafe::a9) by BN0PR04CA0147.outlook.office365.com
+ (2603:10b6:408:ed::32) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.406.12 via Frontend Transport; Sun,
+ 13 Sep 2026 09:00:14 +0000
+Authentication-Results: spf=pass (sender IP is 69.72.42.155)
+ smtp.mailfrom=event.adobe.com; dkim=pass (signature was verified)
+ header.d=event.adobe.com;dmarc=pass action=none
+ header.from=event.adobe.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of event.adobe.com
+ designates 69.72.42.155 as permitted sender) receiver=protection.outlook.com;
+ client-ip=69.72.42.155; helo=v5155.v51e342bd.use4.send.mailgun.net; pr=C
+Received: from v5155.v51e342bd.use4.send.mailgun.net (69.72.42.155) by
+ BL02EPF00029927.mail.protection.outlook.com (10.167.249.52) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.21.428.7 via Frontend Transport; Sun, 13 Sep 2026 09:00:13 +0000
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=event.adobe.com; q=dns/txt; s=mx; t=1789290013; x=1789297213;
+ h=Message-Id: To: To: From: From: Subject: Subject: Content-Type: Mime-Version: Date: Sender: Sender;
+ bh=rXY4/Xg2vkFK59TI0eTg2gfx7y4S17bwo4zu9IUtgdA=;
+ b=In24Xm77FblfaNE9Q5D0ibf0gkYlh8JcYaCIvVVQ+ysmsQEF73BIe3zWTMdu6R86E5LHGt30kJl838+QJuWW02McB81LggPQ7UbodNp6Bm+aMm4OLz45p4YPxjPb7fn1jqDTfUfp8eW1vIeiNM6aA1kYyvCYjd6Bq8HgFzVthega/xuHpPK6GcaWw5qCe05tvY3bEzZaHFwbJTvY3LWRFho53nw371k3r65RwDp0Qa6OY5IfesriWW5pF135d3FBOsqUdhk8HKMquywaU+6sYQcOW6lchgVwE7YiBNbKLdZoUXOT/1eTMmGM6WRO1vA12PjE+8PzPjDC8Gi6AiPwSA==
+X-Mailgun-Sid: WyJlYzE5YiIsIm1hZzMyNDIwQGFkb2JlLmNvbSIsIjBkODk3MiJd
+Received: by 9afc62987ddf341a3f8cfec892bd07c7d372228fb0e49cd6bb14279de59d5524 with HTTP
+ id 6aa6661deabcf0bbda1ee9ed; Sun, 13 Sep 2026 09:00:13 GMT
+X-Mailgun-Sending-Ip-Pool-Name: dynamic_good
+X-Mailgun-Sending-Ip-Pool: 686d830c7445e616d47e9bf2
+X-Mailgun-Sending-Ip: 69.72.42.155
+Sender: fulham-v-manchester-united@event.adobe.com
+Date: Sun, 13 Sep 2026 09:00:13 +0000
+Content-Type: multipart/mixed;
+ boundary="0765309d5cfb31577e2b8c3cd8b188b420d61bd32e10714dc1587a6b29c1"
+Subject: Your email is being sent!
+From: Adobe <fulham-v-manchester-united@event.adobe.com>
+To: mag32420@adobe.com
+X-Mailgun-Tag: id-459433702
+X-Mailgun-Tag: send-conf-9330044
+X-Mailgun-Track-Clicks: false
+X-Mailgun-Track-Opens: false
+X-Mailgun-Drop-Message: false
+Message-Id: <20260913090013.564762ccdab6aad1@event.adobe.com>
+Return-Path: bounce+29c96d.0d8972-mag32420=adobe.com@event.adobe.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Sep 2026 09:00:13.9025
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 91136205-ce27-48f9-43ee-08df11756c7f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: fa7b1b5a-7b34-4387-94ae-d2c178decee1:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BL02EPF00029927:EE_|SJ0PR02MB8561:EE_|SA3PR02MB9278:EE_
+X-MS-Exchange-Organization-AuthSource: BL02EPF00029927.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 91136205-ce27-48f9-43ee-08df11756c7f
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+'X-ETR': 'Bypass spam filtering for Adobe's Domain'
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704162211799003|4022899009|6049299003|3109299003|7049299003|69100299015|29132699027|1032899013|7149299003|4053099003|19002099009|18003699003|10067099003|5063699009|11063799006|4076899003|8096899003|16102099003|2066899003|55112099003|56012099006;
+X-Forefront-Antispam-Report: CIP:69.72.42.155;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:v5155.v51e342bd.use4.send.mailgun.net;PTR:v5155.v51e342bd.use4.send.mailgun.net;CAT:NONE;SFS:(13230040)(704162211799003)(4022899009)(6049299003)(3109299003)(7049299003)(69100299015)(29132699027)(1032899013)(7149299003)(4053099003)(19002099009)(18003699003)(10067099003)(5063699009)(11063799006)(4076899003)(8096899003)(16102099003)(2066899003)(55112099003)(56012099006);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Sep 2026 09:00:13.7522
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 91136205-ce27-48f9-43ee-08df11756c7f
+X-MS-Exchange-CrossTenant-Id: fa7b1b5a-7b34-4387-94ae-d2c178decee1
+X-MS-Exchange-CrossTenant-AuthSource: BL02EPF00029927.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR02MB8561
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:30.7578675
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0406.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?HnRgBV3XUrD41YRJsB/XZad0hOqzRJl2V46IixGVi+CyYmPS5ihJVWQy?=
+ =?Windows-1252?Q?7i18uf8mtK9Qg9kgEnUd4VMllFHVQzVEwZfobi73pCsqDiiszOgL5qMx?=
+ =?Windows-1252?Q?lnvJLAKwzRfvZN8s/QlPrnzqRG4X4VVKqglTwb0xcgI/bqAuZFsrwmvF?=
+ =?Windows-1252?Q?TYtDZr1zmKPDfc89E8rZ53c4TCBvRKaoRXZiwBrf5+/dCQK7sl/8PL3f?=
+ =?Windows-1252?Q?PGwEcPhJREirdJjOiHzM5Y//AsfqLLuoVg7T9LQJ9AInd3+Ty+VeRv2C?=
+ =?Windows-1252?Q?Tb2qqlejkhzbMQBdiOVhQtFNYzm/nbjx5hH2sC/Cbe5ngC8W+V57/lsx?=
+ =?Windows-1252?Q?vJNWcEWH5Pg5pfm3b5ZCsMi1dSYcgnkiyjKEMi+twFIxBArjaPCHB3D6?=
+ =?Windows-1252?Q?qZUoYfUTEcatwUfm2S7yhewJnzCc/Otxc7jejdD5HjubFgI3KZfjbA+N?=
+ =?Windows-1252?Q?OcREGwYd9qa88ue11XQ3fUJ73XEeomXistUwSIYraYBPBEJu2w1UtetJ?=
+ =?Windows-1252?Q?nAGCTy1h9y5N4/R5EtCyyngrzNa9JUoZ+0yQ0lEZh164nkAXsu7JkHsb?=
+ =?Windows-1252?Q?QDYOJ94OSRI33NZXYhizoPmeHxOccCkkGOQxEVb+/zqN/PLaPwnK8QAr?=
+ =?Windows-1252?Q?4WKFBO6ipkXMwN6KzGbeEW54OJ13KiSZNW5lSHTarwoU8ubOcAzEfHlF?=
+ =?Windows-1252?Q?Y2uoHkf7mbL7dOVPRMUQbvjemR6+4JBc/HvcsD/Xpshr+0If0ibpAYGE?=
+ =?Windows-1252?Q?ebmRq5p36XnbEFaqI0seeeVNt8ikX4C7wXE3ZYzhBU9lGByW038JuXIO?=
+ =?Windows-1252?Q?2yY6cXG1QqthQzxt0fTISZwQoFMtvyLG1NhfUdcvQPaUO76Q2OHaewon?=
+ =?Windows-1252?Q?FOHStuUkG5ScW5CsRfkX/idTbF6B28Wf45Zq4MqHY/kgzB/TjDkU6r2a?=
+ =?Windows-1252?Q?VCaq9deZCMCjXinXnRBvpNmMdwUttiV8h4PxTQPDhrecmBdffIHoM7Cq?=
+ =?Windows-1252?Q?vzbUg/Y9Y9jaa83CIldPSnVxh5iHf1ULY90ItsS27U1RGGXkS7VYJRns?=
+ =?Windows-1252?Q?YkLa8ebAI85GCV0dDj/VzRQnSqeCgCjxkZm0aKc4kRHfR4z64fVfSehb?=
+ =?Windows-1252?Q?slw3bNcdKwj0gJGE3VnjjAyLaMU4XliN+zD76MvYsL7645eh/lqzlBSE?=
+ =?Windows-1252?Q?O6eYGKg1sP4BLJBNHi7UJZUhqWSRp8jEhWxo6W4XDnYavuN9r+C7T9TZ?=
+ =?Windows-1252?Q?x8f+af8uenec9Kr0LYx4+3FU1FRMLLZe7nj+lErmGO9f6Kb6q4TRI6MP?=
+ =?Windows-1252?Q?o8GP8fdbHM/XwjFLzioE7r3oBGKPsVYXDYgOBIoxAvEvppJbpmCxMfu3?=
+ =?Windows-1252?Q?yV9/dZROwTEYdbtCbqEJabrMoT7vqnZ5OFA3C5WoEYq1o/xUf0K//ZtK?=
+ =?Windows-1252?Q?beWS3X8kHQ6xFkNcsTIwH4eYu0rEWtrngmneBCQiK8tay9CX4jZaAIEL?=
+ =?Windows-1252?Q?wGdgP/HCVuNohVeDxibJK/RJ59QrO13yzOi5JLyk/Lvwg4xoIg/7VJIc?=
+ =?Windows-1252?Q?bujN5GP+SaeEv2jzeyz8rgJqU/gTfCfI180t/2HcjqZbjHzKqQcYbjev?=
+ =?Windows-1252?Q?EjrEhysx1TNCo3BVqaKiJaq3VRfNOjtzVUdsDl7kHPWpF8alrW7OVZuP?=
+ =?Windows-1252?Q?GKu7ZVaAbk8Kc9qJ1+gTotyLQ1d9dz+qag90+sa0WluUFQFbkj0GlPSk?=
+ =?Windows-1252?Q?C2mJOtst6xSklO5QOnZO5mx5W14QoRtaDdmhxrQhpp9IN2fxCMAJCAf1?=
+ =?Windows-1252?Q?nF18emFvkzJwP7BW/Lq8c7CVYISV/W1BpOMheV147HEJgihuTPsM2x9e?=
+ =?Windows-1252?Q?myFVne7WHnwKXhOuGYn2IcOIYex4MrzD5j0=3D?=
+MIME-Version: 1.0
+
+--0765309d5cfb31577e2b8c3cd8b188b420d61bd32e10714dc1587a6b29c1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.0"=
+>
+	<style type=3D"text/css">
+		/* Based on The MailChimp Reset INLINE: Yes. */
+		/* Client-specific Styles */
+		#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" m=
+enu link. */
+		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-=
+adjust:100%; margin:0; padding:0;}
+		/* Prevent Webkit and Windows Mobile platforms from changing default font=
+ sizes.*/
+		.ExternalClass {width:100%;} /* Force Hotmail to display emails at full w=
+idth */
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass fon=
+t, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+		/* Forces Hotmail to display normal line spacing.  More on that: http://w=
+ww.emailonacid.com/forum/viewthread/43/ */
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height=
+: 100% !important;}
+		/* End reset */
+
+		/* Some sensible defaults for images
+		Bring inline: Yes. */
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;=
+}
+		a img {border:none;}
+		.image_fix {display:block;}
+
+		/* Yahoo paragraph fix
+		Bring inline: Yes. */
+		p {margin: 1em 0;}
+
+		/* Hotmail header color reset
+		Bring inline: Yes. */
+		/*h1, h2, h3, h4, h5, h6 {color: black !important;}*/
+
+		/*h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: blue !important;}*/
+
+		h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:ac=
+tive {
+		color: purple !important; /* Preferably not the same color as the normal =
+header link color.  There is limited support for psuedo classes in email cl=
+ients, this was added just for good measure. */
+		}
+
+		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6=
+ a:visited {
+		color: purple !important; /* Preferably not the same color as the normal =
+header link color. There is limited support for psuedo classes in email cli=
+ents, this was added just for good measure. */
+		}
+
+		/* Outlook 07, 10 Padding issue fix
+		Bring inline: No.*/
+		/*table td {border-collapse: collapse;}*/
+
+		/* Remove spacing around Outlook 07, 10 tables
+		Bring inline: Yes */
+		/*table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspac=
+e:0pt; }*/
+
+		/* Styling your links has become much simpler with the new Yahoo.  In fac=
+t, it falls in line with the main credo of styling in email and make sure t=
+o bring your styles inline.  Your link colors will be uniform across client=
+s when brought inline.
+		Bring inline: Yes. */
+		a {color: #1155CC;}
+
+
+		/***************************************************
+		****************************************************
+		MOBILE TARGETING
+		****************************************************
+		***************************************************/
+		@media only screen and (max-device-width: 480px) {
+			/* Part one of controlling phone number linking for mobile. */
+			a[href^=3D"tel"], a[href^=3D"sms"] {
+						text-decoration: none;
+						color: blue; /* or whatever your want */
+						pointer-events: none;
+						cursor: default;
+					}
+
+			.mobile_link a[href^=3D"tel"], .mobile_link a[href^=3D"sms"] {
+						text-decoration: default;
+						color: orange !important;
+						pointer-events: auto;
+						cursor: default;
+					}
+
+		}
+
+		/* More Specific Targeting */
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1=
+024px) {
+		/* You guessed it, ipad (tablets, smaller screens, etc) */
+			/* repeating for the ipad */
+			a[href^=3D"tel"], a[href^=3D"sms"] {
+						text-decoration: none;
+						color: blue; /* or whatever your want */
+						pointer-events: none;
+						cursor: default;
+					}
+
+			.mobile_link a[href^=3D"tel"], .mobile_link a[href^=3D"sms"] {
+						text-decoration: default;
+						color: orange !important;
+						pointer-events: auto;
+						cursor: default;
+					}
+		}
+
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		/* Put your iPhone 4g styles in here */
+		}
+
+		/* Android targeting */
+		@media only screen and (-webkit-device-pixel-ratio:.75){
+		/* Put CSS for low density (ldpi) Android layouts in here */
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1){
+		/* Put CSS for medium density (mdpi) Android layouts in here */
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1.5){
+		/* Put CSS for high density (hdpi) Android layouts in here */
+		}
+		/* end Android targeting */
+
+		/* CTA for images in editor only */
+		.base-email-body img{
+			cursor: pointer;
+		}
+
+		.strip-on-save{
+			display: none;
+		}
+
+		.base-email-body .footer img{
+			cursor: auto;
+		}
+
+
+	</style>
+
+	<!-- Targeting Windows Mobile -->
+	<!--[if IEMobile 7]>
+	<style type=3D"text/css">
+
+	</style>
+	<![endif]-->
+
+	<!-- ***********************************************
+	****************************************************
+	END MOBILE TARGETING
+	****************************************************
+	************************************************ -->
+
+	<!--[if gte mso 9]>
+		<style>
+		/* Target Outlook 2007 and 2010 */
+		</style>
+	<![endif]-->
+</head>
+<body class=3D"base-email-body" spellcheck=3D"false"><div style=3D"backgrou=
+nd-color: #FFF8D5; text-align:center; padding: 12px; font-family:sans-serif=
+"><p>Success!</p><p>This email is being sent</p></div>
+<!-- Wrapper/Container Table: Use a wrapper table to control the width and =
+the background color consistently of your email. Use this approach instead =
+of setting attributes on the body tag. -->
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbo=
+dy>
+	<tr>
+		<td colspan=3D"100" valign=3D"top" align=3D"center">
+
+			<table style=3D"font-family:Arial, sans-serif;padding:20px;width:640px;b=
+ackground-color:rgb(255,255,255);" id=3D"backgroundTable" data-backgroundco=
+lor=3D"1" is-colormapped=3D"1" width=3D"640" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0">
+				<tbody><tr>
+					<td valign=3D"top" align=3D"center">
+					<!-- Tables are the most common way to format your email consistently.=
+ Set your table widths inside cells and in most cases reset cellpadding, ce=
+llspacing, and border to zero. Use nested tables as a way to space effectiv=
+ely in your message. -->
+						<table valign=3D"center" id=3D"emailContentTable" style=3D"margin:0px=
+ auto;padding:0px;width:600px;" data-backgroundcolor=3D"" width=3D"600" cel=
+lspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center">
+							<tbody><tr><td class=3D"email-preview-text" style=3D"background-colo=
+r:transparent;display:none;visibility:hidden;font-size:1px;color:#ffffff;li=
+ne-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">We c=
+an't wait to see you.</td></tr>
+							<tr><td style=3D"padding:0px 25px;background-color:rgb(255,255,255);=
+" data-backgroundcolor=3D"1" align=3D"center">
+								<table id=3D"emailContentTableInner" valign=3D"center" class=3D"has=
+-migrated-wrappers" style=3D"padding:0;margin:0;background-color:transparen=
+t;width:550px;" width=3D"550" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" align=3D"center">
+									<tbody>
+<tr data-type=3D"spacer" data-row-name=3D"Spacer" contenteditable=3D"false"=
+ class=3D"scrolledTo">
+	<td colspan=3D"100" style=3D"padding:0px;">
+		<div>
+			<div class=3D"spacer-line" style=3D"height:5px;width:100%;font-size:0px;=
+margin:0px;border-width:medium;border-style:none;background-color:rgb(250,1=
+5,0);" data-backgroundcolor=3D"7">&nbsp;</div>
+		</div>
+	</td>
+</tr><tr data-type=3D"image" data-row-name=3D"Image" class=3D"scrolledTo" d=
+ata-locked=3D"1" data-locked-to=3D"dark logo" contenteditable=3D"false">
+	<td colspan=3D"100" style=3D"text-align:center;padding:25px 50px;backgroun=
+d-color:rgb(255,255,255);" data-backgroundcolor=3D"1">
+					<a href=3D"" target=3D"_blank" rel=3D"noreferrer noopener">
+				<img style=3D"display:block;max-width:550px;margin-top:0px;margin-botto=
+m:0px;border-style:none;border-width:medium;width:100px;" alt=3D"Adobe" wid=
+th=3D"100" align=3D"left" src=3D"https://d3m889aznlr23d.cloudfront.net/img/=
+events/id/458/458551583/assets/aa9bcbb529c32c3618142bb907e27567.2024-Adobe-=
+Red.png">
+					</a>
+			=09
+=09
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+</tr><tr data-type=3D"image" data-row-name=3D"Image" contenteditable=3D"fal=
+se" class=3D"scrolledTo">
+	<td colspan=3D"100" style=3D"text-align:center;padding:0px 0px 25px;">
+					<a href=3D"https://nam04.safelinks.protection.outlook.com/?url=3Dhttp%=
+3A%2F%2Fevent.adobe.com%2Ffulham-v-manchester-united%3Fgz%3Dnone&amp;data=
+=3D05%7C02%7Cmag32420%40adobe.com%7C91136205ce2748f943ee08df11756c7f%7Cfa7b=
+1b5a7b34438794aed2c178decee1%7C0%7C0%7C639248868446964458%7CUnknown%7CTWFpb=
+GZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoi=
+TWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DIP%2BTAlM89M1ETBrf0yMNqMn=
+1BCY1xqxdTxaBou2Xv%2Fo%3D&amp;reserved=3D0" originalsrc=3D"http://event.ado=
+be.com/fulham-v-manchester-united?gz=3Dnone" target=3D"_blank" rel=3D"noref=
+errer noopener">
+						<img style=3D"display:block;width:100%;max-width:550px;height:auto;ma=
+rgin:0px auto;border-width:medium;border-style:none;" width=3D"100%" alt=3D=
+"Banner" align=3D"center" src=3D"http://assets.splash.email/img/events/id/4=
+59/459433702/assets/965150e3f2d05e12c33a59fff3fb13bb.Email-banner_1200x400_=
+FY26-Q4-Fulham-vs.-Manchester-United_Option-2.jpg">
+					</a>
+			=09
+	</td>
+</tr>
+<tr data-type=3D"rsvp-confirmation-info" data-row-name=3D"RSVP Confirmation=
+">
+    <td colspan=3D"100" style=3D"padding:0px 50px 25px;" valign=3D"top">
+        <div style=3D"margin:0px;border-style:none;border-width:medium;font=
+-family:'Helvetica Neue', Arial, sans-serif;text-transform:none;font-size:1=
+6px;text-align:left;line-height:26px;color:rgb(0,0,0);font-weight:normal;le=
+tter-spacing:normal;background-color:transparent;max-width:550px;" class=3D=
+"editable mce-content-body" data-color=3D"0">Dear Sumit,<br><br>We are look=
+ing forward to hosting you at the <strong>Fulham v Manchester United</stron=
+g>&nbsp;next week.<br><br><strong>Event Details:</strong><br><strong>Date:<=
+/strong> Sunday, 20 September 2026 <br><strong>Time:</strong> 2:30pm =E2=80=
+=93 6:30pm<br><strong>Venue:</strong> Craven Cottage, London<br><br>If you =
+have any questions in the meantime, please don=E2=80=99t hesitate to reach =
+out.<br><br>Best wishes,&nbsp;&nbsp;<br>The Adobe Events Team&nbsp;<br></di=
+v>
+    </td>
+</tr><tr data-type=3D"image" data-row-name=3D"Image" class=3D"scrolledTo" d=
+ata-locked=3D"0" contenteditable=3D"false">
+	<td colspan=3D"100" style=3D"text-align:center;padding:25px 50px;backgroun=
+d-color:rgb(245,245,245);" data-backgroundcolor=3D"9">
+					<a href=3D"" target=3D"_blank" rel=3D"noreferrer noopener">
+				<img style=3D"display:block;max-width:550px;margin-top:0px;margin-botto=
+m:0px;border-style:none;border-width:medium;width:30px;" alt=3D"Adobe" widt=
+h=3D"30" align=3D"left" src=3D"http://assets.splash.events/img/events/id/45=
+8/458551615/assets/5879160e6aa9a8aa506947b7173b8014.2024-Adobe-Bug-Red.png"=
+>
+					</a>
+			=09
+=09
+
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+							=09
+
+
+
+<tr data-type=3D"text-row" data-row-name=3D"Text">
+	<td colspan=3D"100" style=3D"padding:0px 50px 25px;background-color:rgb(24=
+5,245,245);" valign=3D"top" data-backgroundcolor=3D"9">
+		<div style=3D"margin:0px;border-style:none;border-width:medium;font-famil=
+y:'Helvetica Neue', Arial, sans-serif;text-transform:none;font-size:14px;te=
+xt-align:left;line-height:18px;color:rgb(102,102,102);font-weight:normal;le=
+tter-spacing:normal;background-color:transparent;max-width:550px;" class=3D=
+"editable mce-content-body"><em>To ensure email delivery, add @event.adobe.=
+com to your address book, contacts, or safe sender list.</em></div>
+	</td>
+</tr>
+
+</tbody></table>
+							</td></tr>
+						</tbody></table>
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+	<tr class=3D"footer" contenteditable=3D"false" unselectable=3D"on">
+    <td align=3D"center" colspan=3D"100" valign=3D"top" bgcolor=3D"#ffffff"=
+ style=3D"padding:16px 0;margin:0;background-color:#ffffff;">
+                <div style=3D"margin:0 0 5px;text-align:center;padding:0;fo=
+nt-family:'Helvetica Neue', Arial;">
+            <a href=3D"https://nam04.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fsplashthat.com%2Funsubscribe%3Funsubscribe%3D1%26gz%3Dnone=
+%26event_id%3D459433702&amp;data=3D05%7C02%7Cmag32420%40adobe.com%7C9113620=
+5ce2748f943ee08df11756c7f%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C6392=
+48868446989231%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAu=
+MDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;s=
+data=3DuI7LaeFQfsOnyDTsykhwGeS7VkrYoljKu23%2FW5Fermw%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://splashthat.com/unsubscribe?unsubscribe=3D1&amp;gz=3Dn=
+one&amp;event_id=3D459433702" target=3D"_blank" title=3D"Unsubscribe" style=
+=3D"color:#BBC4CD;display:inline-block;padding:0;margin:0;font-size:11px;te=
+xt-align:center;" rel=3D"noreferrer noopener">Unsubscribe</a>
+        </div>
+                    </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+</tbody></table>
+<!-- End of wrapper table -->
+<!-- replace-me -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>=
+
+--0765309d5cfb31577e2b8c3cd8b188b420d61bd32e10714dc1587a6b29c1
+Content-Type: text/calendar; name="invite-459433702-6aa6661acedb30.24531835.ics"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+	filename="invite-459433702-6aa6661acedb30.24531835.ics"
+
+QkVHSU46VkNBTEVOREFSDQpQUk9ESUQ6LS8vU3BsYXNoIEV2ZW50IFBsYW5uaW5nIFN5c3RlbQ0K
+VkVSU0lPTjoyLjANCk1FVEhPRDpQVUJMSVNIDQpCRUdJTjpWRVZFTlQNCkRUU1RBTVA6MjAyNjA5
+MTNUMDkwMDEwWg0KVUlEOjQ1ZTU4M2NjNjZlZGVjNDY3NDFkMTUwNTZjN2ZkZjBjY2IzMmUzMjBA
+ZXZlbnQuYWRvYmUuY29tDQogL2Z1bGhhbS12LW1hbmNoZXN0ZXItdW5pdGVkDQpVUkw6aHR0cDov
+L2V2ZW50LmFkb2JlLmNvbS9mdWxoYW0tdi1tYW5jaGVzdGVyLXVuaXRlZA0KRFRTVEFSVDoyMDI2
+MDkyMFQxMzMwMDBaDQpEVEVORDoyMDI2MDkyMFQxNzMwMDBaDQpPUkdBTklaRVI7Q049IkFkb2Jl
+IjptYWlsdG86ZnVsaGFtLXYtbWFuY2hlc3Rlci11bml0ZWRAZXZlbnQNCiAuYWRvYmUuY29tDQpT
+VU1NQVJZOkZ1bGhhbSB2IE1hbmNoZXN0ZXIgVW5pdGVkDQpERVNDUklQVElPTjpUaGFuayB5b3Ug
+Zm9yIHJlZ2lzdGVyaW5nIGZvciBGdWxoYW0gdiBNYW5jaGVzdGUNCiByIFVuaXRlZC4gWW91ciBy
+ZWdpc3RyYXRpb24gaGFzIGJlZW4gY29uZmlybWVkLlxuXG5FdmVudCBEZXQNCiBhaWxzOlxuRGF0
+ZTogU3VuZGF5LCAyMCBTZXB0ZW1iZXIgMjAyNiBcblRpbWU6IDI6MzBwbSDigJMgNjozMA0KIHBt
+XG5WZW51ZTogQ3JhdmVuIENvdHRhZ2UsIExvbmRvblxuXG5CZXN0IHdpc2hlcywgIFxuVGhlIEFk
+bw0KIGJlIEV2ZW50cyBUZWFtICANCkxPQ0FUSU9OOkNyYXZlbiBDb3R0YWdlIFN0ZXZlbmFnZSBS
+b2FkIEVuZ2xhbmQgU1c2IDZISA0KRU5EOlZFVkVOVA0KRU5EOlZDQUxFTkRBUg0KCg==
+
+--0765309d5cfb31577e2b8c3cd8b188b420d61bd32e10714dc1587a6b29c1--
